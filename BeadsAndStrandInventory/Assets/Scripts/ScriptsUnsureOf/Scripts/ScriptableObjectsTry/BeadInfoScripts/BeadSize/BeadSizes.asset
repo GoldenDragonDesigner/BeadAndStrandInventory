@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705d1040f7dd3aa4da3b85627a90c4c8, type: 3}
+  m_Name: BeadSizes
+  m_EditorClassIdentifier: Assembly-CSharp::BeadSize
+  fourMm: 4
+  sixMm: 6
+  eightMm: 8
+  tenMm: 10
+  twelveMm: 12
+  fourteenMm: 14
+  sixteenMm: 16
+  eighteenMm: 18
+  twentyMm: 20

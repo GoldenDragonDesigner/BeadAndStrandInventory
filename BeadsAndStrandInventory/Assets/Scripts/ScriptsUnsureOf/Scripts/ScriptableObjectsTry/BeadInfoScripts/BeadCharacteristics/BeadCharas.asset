@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b8ec7426643d444a7f5ffbcf66fe71, type: 3}
+  m_Name: BeadCharas
+  m_EditorClassIdentifier: 
+  amethystChar1: -Crown Chakra
+  amethystChar2: -Purple in Color
+  amethystChar3: -Helps with Inflammation
+  amethystChar4: -Connecting with your Divine
+  lapisChar1: -Third Eye Chakra
+  lapisChar2: -Royal Blue in Color
+  lapisChar3: -Promotes the need for Love, Partnership, and Friendship
+  lapisChar4: -Helps with pain associated with the joints
+  sodaliteChar1: -Throat Chakra
+  sodaliteChar2: -Dark Blue in Color
+  sodaliteChar3: -Activates the Pancreas
+  sodaliteChar4: -Sensitive individuals gain Courage, Stonger Character, and Self
+    Confidence
+  aventurineChar1: -Heart Chakra
+  aventurineChar2: -Green in Color
+  aventurineChar3: -Worn on the Skin, it heals acne and skin alergies
+  aventurineChar4: -You feel more humourous and cheerful, therefore tranforming negative
+    energy into positive attitude towards life
+  citrineChar1: -Solar Plexus Chakra
+  citrineChar2: -Orange in Color
+  citrineChar3: -Acts as a battery for you and other stones its near
+  citrineChar4: -Strenghens Immune System and Metabolism
+  tigersEyeChar1: -Solar Plexus Chakra
+  tigersEyeChar2: -Bown shimmery in Color
+  tigersEyeChar3: -Can also heal migraines and sever headaches, by strengthen the
+    Cerebellum
+  tigersEyeChar4: -If worn for protection it will be almost impossible for the people
+    your selling to to feel over charged
+  CarnelianChar1: -Sacral Chakra
+  CarnelianChar2: -Dark burnt Orange in Color
+  CarnelianChar3: -Helps againg Vascular Congestion and blood disorders
+  CarnelianChar4: -Symbolizes Regeneration
+  GarnetChar1: -Root Chakra
+  GarnetChar2: -Dark Blood Red
+  GarnetChar3: -Grounding effect by feeling more centered and in the moment
+  GarnetChar4: -Helps with repair to the heart and keeps the heart rhythm strong
+  AbaloneShellChar1: -To hold the Clear Quartz on the meridian line of the body
+  AbaloneShellChar2: -White to Red to Green
+  AbaloneShellChar3: -Protection
+  AbaloneShellChar4: -Natural shielding and healing in emotional Trama, Balances
+    out Emotions
+  clearQuartzChar1: -Crown Chakra
+  clearQuartzChar2: -Clear in Color
+  clearQuartzChar3: -Amplifies any energy its near or connected to
+  clearQuartzChar4: -Helps with Mental Clarity and decluttering the mind

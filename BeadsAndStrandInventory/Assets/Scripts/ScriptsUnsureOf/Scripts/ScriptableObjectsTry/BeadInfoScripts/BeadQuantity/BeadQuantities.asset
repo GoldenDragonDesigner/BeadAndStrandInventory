@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb67bab583f7a54291f77684d68b30f, type: 3}
+  m_Name: BeadQuantities
+  m_EditorClassIdentifier: 
+  amethystRoughQuantity: 3
+  lapisLazuliQuantity: 7
+  sodaliteQuantity: 6
+  aventurineQuantity: 13
+  citrineQuantity: 50
+  tigersEyeQuantity: 2
+  carnelianQuantity: 9
+  garnetQuantity: 11
+  abaloneShellQuantity: 25
+  clearQuartzQuantity: 33
+  beadQuantities: 
