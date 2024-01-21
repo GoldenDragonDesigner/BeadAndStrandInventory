@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using BansheeGz.BGDatabase;
 
 public class BeadPricing : MonoBehaviour
 {
+
+
     public BeadData beadInfo;
     public InputFieldTextHolder beadNameInputText;
     //public Sprite beadSpriteImage;
@@ -16,6 +19,10 @@ public class BeadPricing : MonoBehaviour
     //public TMP_Dropdown beadSizeDropDownBox;
     //public float numberOfBeadOnHand;
 
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
         CalculateBeadAmount();
@@ -34,5 +41,10 @@ public class BeadPricing : MonoBehaviour
     {
         individualBeadDollarAmount = amountOfStrandInputText.floatText / numberOfBeadsOnHandInputText.floatText;
         individualBeadDollarAmountText.text = individualBeadDollarAmount.ToString();
+    }
+
+    public void AddingToInventoryButton()
+    {
+
     }
 }
