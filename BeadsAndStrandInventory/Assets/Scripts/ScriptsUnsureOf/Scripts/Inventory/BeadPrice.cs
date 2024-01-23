@@ -8,7 +8,6 @@ public class BeadPrice : MonoBehaviour
 {
     #region Variables
     private BeadPricing_BeadInfo beadPrice;
-    //private BGEntityGo bgEntityGo;
 
     public string beadName;
     public string typeOfBead;
@@ -51,18 +50,13 @@ public class BeadPrice : MonoBehaviour
             priceOfBeadStrandText.text = priceOfBeadStrand.ToString();
             pictureOfBeadSprite.sprite = beadPrice.Picture_Of_Bead;
         }
+        PriceOfEachBead();
+    }
+
+    public void PriceOfEachBead()
+    {
         amountOfEachBead = priceOfBeadStrand / numberOfBeadsOnStrand;
         amountOfEachBead = Math.Round(amountOfEachBead, 2, MidpointRounding.AwayFromZero);
         amountOfEachBeadText.text = amountOfEachBead.ToString();
-    }
-
-    public void NextBeadButton()
-    {
-        
-    }
-
-    public void PreviousBeadButton()
-    {
-
     }
 }

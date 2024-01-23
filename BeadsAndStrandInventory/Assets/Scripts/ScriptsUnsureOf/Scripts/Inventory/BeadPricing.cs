@@ -5,8 +5,6 @@ using BansheeGz.BGDatabase;
 
 public class BeadPricing : MonoBehaviour
 {
-
-
     public BeadData beadInfo;
     public InputFieldTextHolder beadNameInputText;
     //public Sprite beadSpriteImage;

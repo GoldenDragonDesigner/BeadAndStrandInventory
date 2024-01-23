@@ -20,4 +20,10 @@ public class EntityController : MonoBehaviour
 
         dbComponent.Entity = BeadPricing_BeadInfo.MetaDefault.GetEntity(entityIndex);
     }
+
+    //private void AddBeadPrice(int entityIndex)
+    //{
+    //    if (entityIndex < 0 || entityIndex >= BeadPricing_BeadInfo.)
+    //    dbComponent.Amount_Of_Each_Bead = 
+    //}
 }
