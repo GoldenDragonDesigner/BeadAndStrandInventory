@@ -5,7 +5,7 @@ using TMPro;
 public class StrandPrice : MonoBehaviour
 {
     #region
-    public BeadPricing_BeadInfo beadPrice;
+    public BeadInfo beadPrice;
     public StrandInfo strandInfo;
     public string strandName;
     public string bead1Name;
@@ -63,7 +63,7 @@ public class StrandPrice : MonoBehaviour
         {
             strandName = strandInfo.name;
             strandNameText.text = strandName;
-            CalCulateTotalBeadPrice(bead1Name, strandInfo.BeadNumber1NameUsed, numberOfBead1Used, strandInfo.NumberOfBeads1Used, amountOfEachBead1, beadPrice.Amount_Of_Each_Bead, totalPriceOfBead1, bead1NameText, totalPriceOfBead1Text);
+            //CalCulateTotalBeadPrice(bead1Name, strandInfo.BeadNumber1NameUsed, numberOfBead1Used, strandInfo.NumberOfBeads1Used, amountOfEachBead1, beadPrice.Amount_Of_Each_Bead, totalPriceOfBead1, bead1NameText, totalPriceOfBead1Text);
             CalculateStrandCost();
             CalculateLaborCost();
             TotalStrandCost();

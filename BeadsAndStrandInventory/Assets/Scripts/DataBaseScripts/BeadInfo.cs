@@ -29,11 +29,6 @@ public partial class BeadInfo : BGEntityGo
 		get => _Number_Of_Beads_On_Hand[Entity.Index];
 		set => _Number_Of_Beads_On_Hand[Entity.Index] = value;
 	}
-	public System.Double Amount_Of_Each_Bead
-	{
-		get => _Amount_Of_Each_Bead[Entity.Index];
-		set => _Amount_Of_Each_Bead[Entity.Index] = value;
-	}
 	public UnityEngine.Sprite Picture_Of_Bead => _Picture_Of_Bead[Entity.Index];
 	public System.Single Price_Of_BeadStrand
 	{
@@ -56,8 +51,6 @@ public partial class BeadInfo : BGEntityGo
 	public static BansheeGz.BGDatabase.BGFieldString _Type_Of_Bead => _ufle12jhs77_Type_Of_Bead ?? (_ufle12jhs77_Type_Of_Bead = BGCodeGenUtils.GetField<BansheeGz.BGDatabase.BGFieldString>(MetaDefault, new BGId(5105042686097870343UL, 4478521550558106269UL), () => _ufle12jhs77_Type_Of_Bead = null));
 	private static BansheeGz.BGDatabase.BGFieldFloat _ufle12jhs77_Number_Of_Beads_On_Hand;
 	public static BansheeGz.BGDatabase.BGFieldFloat _Number_Of_Beads_On_Hand => _ufle12jhs77_Number_Of_Beads_On_Hand ?? (_ufle12jhs77_Number_Of_Beads_On_Hand = BGCodeGenUtils.GetField<BansheeGz.BGDatabase.BGFieldFloat>(MetaDefault, new BGId(5000270233350780749UL, 17192403440994738849UL), () => _ufle12jhs77_Number_Of_Beads_On_Hand = null));
-	private static BansheeGz.BGDatabase.BGFieldDouble _ufle12jhs77_Amount_Of_Each_Bead;
-	public static BansheeGz.BGDatabase.BGFieldDouble _Amount_Of_Each_Bead => _ufle12jhs77_Amount_Of_Each_Bead ?? (_ufle12jhs77_Amount_Of_Each_Bead = BGCodeGenUtils.GetField<BansheeGz.BGDatabase.BGFieldDouble>(MetaDefault, new BGId(5643739169976233720UL, 1860492474868514978UL), () => _ufle12jhs77_Amount_Of_Each_Bead = null));
 	private static BansheeGz.BGDatabase.BGFieldUnitySprite _ufle12jhs77_Picture_Of_Bead;
 	public static BansheeGz.BGDatabase.BGFieldUnitySprite _Picture_Of_Bead => _ufle12jhs77_Picture_Of_Bead ?? (_ufle12jhs77_Picture_Of_Bead = BGCodeGenUtils.GetField<BansheeGz.BGDatabase.BGFieldUnitySprite>(MetaDefault, new BGId(5307244178994383635UL, 7521017248257770645UL), () => _ufle12jhs77_Picture_Of_Bead = null));
 	private static BansheeGz.BGDatabase.BGFieldFloat _ufle12jhs77_Price_Of_BeadStrand;

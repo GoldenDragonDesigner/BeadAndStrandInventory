@@ -2,39 +2,44 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
-using BansheeGz.BGDatabase;
-
+using System.Collections;
 public class BeadPrice : MonoBehaviour
 {
     #region Variables
-    private BeadPricing_BeadInfo beadPrice;
-
+    private BeadInfo beadPrice;
+    public Inventory beadInventory;
     public string beadName;
     public string typeOfBead;
     public float numberOfBeadsOnStrand;
+    public float numberOfBeadsOnHand;
     public float priceOfBeadStrand;
     public double amountOfEachBead;
-
+    public string beadSize;
     public TMP_Text beadNameText;
     public TMP_Text typeOfBeadText;
-    public TMP_Text numberOfBeadsOnStrandText;
+    public TMP_Text numberOfBeadsOnHandText;
     public TMP_Text priceOfBeadStrandText;
     public TMP_Text amountOfEachBeadText;
     public Image pictureOfBeadSprite;
+    public TMP_Text beadSizeText;
     public Button nextBeadButton;
     public Button lastBeadButton;
-
+    public float addingBeadTime;
+    public bool beadAdded = false;
     #endregion Variables
 
+    #region StartAndUpdate
     void Start()
     {
-        beadPrice = GetComponent<BeadPricing_BeadInfo>();
+        beadAdded = false;
+        beadPrice = GetComponent<BeadInfo>();
     }
 
     void Update()
     {
         CalculateBeadPrice();
     }
+    #endregion StartAndUpdate
 
     private void CalculateBeadPrice()
     {
@@ -45,7 +50,10 @@ public class BeadPrice : MonoBehaviour
             typeOfBead = beadPrice.Type_Of_Bead;
             typeOfBeadText.text = typeOfBead;
             numberOfBeadsOnStrand = beadPrice.Number_Of_Beads_On_Strand;
-            numberOfBeadsOnStrandText.text = numberOfBeadsOnStrand.ToString();
+            numberOfBeadsOnHand = beadPrice.Number_Of_Beads_On_Hand;
+            numberOfBeadsOnHandText.text = numberOfBeadsOnHand.ToString();
+            beadSize = beadPrice.Bead_Size;
+            beadSizeText.text = beadSize.ToString();
             priceOfBeadStrand = beadPrice.Price_Of_BeadStrand;
             priceOfBeadStrandText.text = priceOfBeadStrand.ToString();
             pictureOfBeadSprite.sprite = beadPrice.Picture_Of_Bead;
@@ -58,5 +66,24 @@ public class BeadPrice : MonoBehaviour
         amountOfEachBead = priceOfBeadStrand / numberOfBeadsOnStrand;
         amountOfEachBead = Math.Round(amountOfEachBead, 2, MidpointRounding.AwayFromZero);
         amountOfEachBeadText.text = amountOfEachBead.ToString();
+        //StartCoroutine(AddingBeadToList());
+    }
+
+    private void AddBeadToList()
+    {
+        StartCoroutine(AddingBeadToList());
+        if(beadAdded == true)
+        {
+            beadInventory.individualBeadPrices.Add(amountOfEachBead);
+            beadAdded = false;
+        }
+    }
+
+    private IEnumerator AddingBeadToList()
+    {
+        beadAdded = true;
+        yield return new WaitForSeconds(addingBeadTime);
+        AddBeadToList();
+        StopCoroutine(AddingBeadToList());
     }
 }
