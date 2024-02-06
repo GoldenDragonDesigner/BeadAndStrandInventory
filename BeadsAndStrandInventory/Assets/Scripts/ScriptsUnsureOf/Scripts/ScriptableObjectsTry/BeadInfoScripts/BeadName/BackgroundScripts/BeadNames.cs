@@ -3,7 +3,7 @@ using System.Collections.Generic;
 [CreateAssetMenu]
 public class BeadNames : ScriptableObject
 {
-    //public string amethyst = "Amethyst";
+    public string amethyst = "Amethyst";
     //public string lapisLazuli = "Lapis Lazuli";
     //public string sodalite = "Sodalite";
     //public string aventurine = "Aventurine";
@@ -17,5 +17,5 @@ public class BeadNames : ScriptableObject
     //public string unikite = "Unikite";
     //public string obsidian = "Obsidian";
 
-    public List<string> beadNames = new List<string>();
+    //public List<string> beadNames = new List<string>();
 }

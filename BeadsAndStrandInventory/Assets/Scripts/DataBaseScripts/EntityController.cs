@@ -21,7 +21,7 @@ public class EntityController : MonoBehaviour
         if (entityIndex < 0 || entityIndex >= BeadInfo.MetaDefault.CountEntities) return;
 
         dbComponent.Entity = BeadInfo.MetaDefault.GetEntity(entityIndex);
-        beadPriceInInventory.individualBeadPrices.Add(beadPrice.amountOfEachBead);
-        beadPriceInInventory.individualBeadName.Add(beadPrice.beadName);
+        //beadPriceInInventory.individualBeadPrices.Add(beadPrice.amountOfEachBead);
+        //beadPriceInInventory.individualBeadName.Add(beadPrice.beadName);
     }
 }

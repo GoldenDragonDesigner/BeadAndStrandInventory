@@ -3,13 +3,14 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System;
+using System.IO;
 
 public class Inventory : MonoBehaviour
 {
-    public List<string> individualBeadName;
-    public List<double> individualBeadPrices;
+    //public List<string> individualBeadName;
+    //public List<double> individualBeadPrices;
 
-    public Dictionary<string, double> beadPrices = new Dictionary<string, double>();
+    //public Dictionary<string, double> beadPrices = new Dictionary<string, double>();
 
     //private void Update()
     //{
@@ -20,7 +21,8 @@ public class Inventory : MonoBehaviour
     //    }
     //}
     //public double garnetBeadPrice;
-    //public double clearQuartBeadPrice;
+    public string clearQuartzName;
+    public double clearQuartBeadPrice;
     //public double abaloneShellBeadPrice;
     //public double citrineBeadPrice;
     //public double bronziteBeadPrice;

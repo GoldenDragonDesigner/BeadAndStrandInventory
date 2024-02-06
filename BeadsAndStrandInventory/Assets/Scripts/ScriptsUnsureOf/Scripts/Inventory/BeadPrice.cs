@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System;
 using TMPro;
 using System.Collections;
-public class BeadPrice : MonoBehaviour
+public class BeadPrice : MonoBehaviour, IDataPersistence
 {
     #region Variables
     private BeadInfo beadPrice;
@@ -26,6 +26,8 @@ public class BeadPrice : MonoBehaviour
     public Button lastBeadButton;
     public float addingBeadTime;
     public bool beadAdded = false;
+
+    public double garnetBeadPrice;
     #endregion Variables
 
     #region StartAndUpdate
@@ -74,7 +76,7 @@ public class BeadPrice : MonoBehaviour
         StartCoroutine(AddingBeadToList());
         if(beadAdded == true)
         {
-            beadInventory.individualBeadPrices.Add(amountOfEachBead);
+            //beadInventory.individualBeadPrices.Add(amountOfEachBead);
             beadAdded = false;
         }
     }
@@ -86,4 +88,29 @@ public class BeadPrice : MonoBehaviour
         AddBeadToList();
         StopCoroutine(AddingBeadToList());
     }
+
+    public void LoadData(DataForBeads bead)
+    {
+        this.garnetBeadPrice = bead.garnetBeadPrice;
+    }
+
+    public void SaveData(ref DataForBeads bead)
+    {
+        bead.garnetBeadPrice = this.garnetBeadPrice;
+    }
+
+    //public void OnNewBeadClicked()
+    //{
+    //    DataPersistenceManager.instance.NewBead();
+    //}
+
+    //public void OnLoadBeadClicked()
+    //{
+    //    DataPersistenceManager.instance.LoadBead();
+    //}
+
+    //public void OnSaveBeadClicked()
+    //{
+    //    DataPersistenceManager.instance.SaveBead();
+    //}
 }
