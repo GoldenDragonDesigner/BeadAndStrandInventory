@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c94f1316771e24f8d6afb5ed70b836, type: 3}
   m_Name: BeadPictures
   m_EditorClassIdentifier: 
-  amethsytImage: {fileID: 21300000, guid: 603171e91b80eba49ab966a7afc52401, type: 3}
-  lapisLazuliImage: {fileID: 0}
-  sodaliteImage: {fileID: 0}
-  aventurineImage: {fileID: 0}
-  citrineImage: {fileID: 0}
-  tigersEyeImage: {fileID: 0}
-  carnelianImage: {fileID: 0}
-  garnetImage: {fileID: 21300000, guid: 9feffa176c59e064583028f157569bf7, type: 3}
-  abaloneShellImage: {fileID: 21300000, guid: 594582ba4bd789e46a52579a4c74bced, type: 3}
-  clearQuartzImage: {fileID: 21300000, guid: f513432bd8f58c24abf9d39c5e22e200, type: 3}
+  amethsytImage: {fileID: 21300000, guid: 58e92e00a42dad9489162c3b9c312b9e, type: 3}
+  lapisLazuliImage: {fileID: 21300000, guid: 4d8d251d865c5f94f8907f6a40f1f790, type: 3}
+  sodaliteImage: {fileID: 21300000, guid: 4fff48eb7f2ddb145b2fbec489f0e5bd, type: 3}
+  aventurineImage: {fileID: 21300000, guid: 6fb310dee79f4b446b3a0321271f0f02, type: 3}
+  citrineImage: {fileID: 21300000, guid: 2544b05716c379445beabb4b538faf8f, type: 3}
+  tigersEyeImage: {fileID: 21300000, guid: 2235b2ff434d1e6439f58d7aa58fa61b, type: 3}
+  carnelianImage: {fileID: 21300000, guid: f46ea4995159eab4189f42ded1436527, type: 3}
+  garnetImage: {fileID: 21300000, guid: c558745fde9660d49933199ffb6c64c3, type: 3}
+  abaloneShellImage: {fileID: 21300000, guid: 76cd3afdaba56cf4db958347b328ff8a, type: 3}
+  clearQuartzImage: {fileID: 21300000, guid: aa60d3ae6b5e5904b821eba0e5ea3c7c, type: 3}
+  beadPics: []

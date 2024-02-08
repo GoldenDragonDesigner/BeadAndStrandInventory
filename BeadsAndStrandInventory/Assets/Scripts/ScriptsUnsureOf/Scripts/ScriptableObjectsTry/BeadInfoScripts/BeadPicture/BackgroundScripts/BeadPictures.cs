@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 [CreateAssetMenu]
 public class BeadPictures : ScriptableObject
 {
@@ -13,6 +12,4 @@ public class BeadPictures : ScriptableObject
     public Sprite garnetImage;
     public Sprite abaloneShellImage;
     public Sprite clearQuartzImage;
-
-    public List<Sprite> beadPics = new List<Sprite>();
 }

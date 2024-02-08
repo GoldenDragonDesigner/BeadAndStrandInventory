@@ -34,7 +34,7 @@ public class BeadAmounts : ScriptableObject
     #endregion CarnelianAmount
 
     #region GarnetAmount
-    public float garnetAmount4Mm = 0.04f;
+    public float garnetAmount4Mm = 0.0f;
     #endregion GarnetAmount
 
     #region ClearQuartzAmount

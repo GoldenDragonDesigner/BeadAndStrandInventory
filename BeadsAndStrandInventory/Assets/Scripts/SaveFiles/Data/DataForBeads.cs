@@ -6,15 +6,29 @@ using UnityEngine;
 //Same as GameData
 public class DataForBeads
 {
-    public double garnetBeadPrice;
 
-    public Dictionary<string, double> beadsPriced;
+    public string garnetBeadSize;
+    //public string garnetType;
+    //public float numberOfGarnetBeadsOnHand;
+    //public float numberOfGarnetBeadsOnStrand;
+    //public double priceOfGarnetBeadStrand;
+    //public double garnetBeadPrice;
+    //public string garnetBeadSize;
+
+
+    //public Dictionary<string, double> beadsPriced;
 
     //the values defined in this constructor will be the default values
     //the game starts with when there's no data to load
     public DataForBeads()
     {
-        this.garnetBeadPrice = 0.00f;
-        beadsPriced = new Dictionary<string, double>();
+        //this.beadName = "";
+        //this.garnetName = "";
+        //this.garnetType = "";
+        //this.numberOfGarnetBeadsOnHand = 0.0f;
+        //this.numberOfGarnetBeadsOnStrand = 0.0f;
+        //this.priceOfGarnetBeadStrand = 0.0d;
+        //this.garnetBeadPrice = 0.0f;
+        this.garnetBeadSize = "";       
     }
 }

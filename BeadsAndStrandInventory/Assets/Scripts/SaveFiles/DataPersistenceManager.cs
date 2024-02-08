@@ -11,6 +11,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private DataForBeads dataForBeads;
     private List<IDataPersistence> dataPersistenceObjects;
+    //private List<IDataPersistence> dataPersistenceObjectsScriptable;
     private FileDataHandler dataHandler;
 
     public static DataPersistenceManager instance { get; private set; }
@@ -28,6 +29,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
+        //this.dataPersistenceObjectsScriptable = FindAllDataPersistenceObjectsScriptable();
         LoadBead();
     }
 
@@ -55,7 +57,12 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.LoadData(dataForBeads);
         }
 
-        Debug.Log("Loaded bead amount = " + dataForBeads.garnetBeadPrice);
+        //foreach(IDataPersistence dataPersistenceObjScript in dataPersistenceObjectsScriptable)
+        //{
+        //    dataPersistenceObjScript.LoadData(dataForBeads);
+        //}
+
+        Debug.Log("Loaded bead amount = " + dataForBeads.garnetBeadSize);
     }
 
     //same as saveGame
@@ -67,7 +74,12 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.SaveData(ref dataForBeads);
         }
 
-        Debug.Log("Save Bead Amount = " + dataForBeads.garnetBeadPrice);
+        //foreach(IDataPersistence dataPersistenceObjScript in dataPersistenceObjectsScriptable)
+        //{
+        //    dataPersistenceObjScript.SaveData(ref dataForBeads);
+        //}
+
+        Debug.Log("Save Bead Amount = " + dataForBeads.garnetBeadSize);
 
         //TODO - save that data to a file using the data handler
         dataHandler.Save(dataForBeads);
@@ -86,9 +98,15 @@ public class DataPersistenceManager : MonoBehaviour
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
-        //IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
-        IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<ScriptableObject>().OfType<IDataPersistence>();
+        IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
 
         return new List<IDataPersistence>(dataPersistenceObjects);
     }
+
+    //private List<IDataPersistence> FindAllDataPersistenceObjectsScriptable()
+    //{
+    //    IEnumerable<IDataPersistence> dataPersistenceObjectsScriptable = FindObjectsOfType<ScriptableObject>().OfType<IDataPersistence>();
+
+    //    return new List<IDataPersistence>(dataPersistenceObjectsScriptable);
+    //}
 }
