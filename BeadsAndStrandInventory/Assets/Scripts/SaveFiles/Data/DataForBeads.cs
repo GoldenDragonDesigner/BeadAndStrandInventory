@@ -7,10 +7,10 @@ using UnityEngine;
 public class DataForBeads
 {
 
-    public string garnetBeadSize;
-    //public string garnetType;
+    public string garnetName;
+    public string garnetType;
+    public float numberOfGarnetBeadsOnStrand;
     //public float numberOfGarnetBeadsOnHand;
-    //public float numberOfGarnetBeadsOnStrand;
     //public double priceOfGarnetBeadStrand;
     //public double garnetBeadPrice;
     //public string garnetBeadSize;
@@ -29,6 +29,6 @@ public class DataForBeads
         //this.numberOfGarnetBeadsOnStrand = 0.0f;
         //this.priceOfGarnetBeadStrand = 0.0d;
         //this.garnetBeadPrice = 0.0f;
-        this.garnetBeadSize = "";       
+        this.garnetName = "";       
     }
 }

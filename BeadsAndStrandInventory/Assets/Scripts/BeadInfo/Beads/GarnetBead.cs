@@ -7,16 +7,23 @@ public class GarnetBead : MonoBehaviour, IDataPersistence
 {
     public bool save;
 
-    public InputFieldTextHolder garnetBeadSizeInputField;
+    public InputFieldTextHolder garnetNameInputField;
+    public InputFieldTextHolder garnetBeadTypeInputField;
+    public InputFieldTextHolder numberOfGarnetBeadOnStrandInputField;
 
-    //public string garnetName;
-    //public Image garnetImage;
-    //public string garnetBeadType;
-    //public float garnetBeadsOnStrand;
+    //public InputFieldTextHolder garnetBeadSizeInputField;
+
+    public string garnetName;
+    public Image garnetImage;
+    public string garnetBeadType;
+    public float numberOfGarnetBeadsOnStrand;
     //public float garnetBeadsOnHand;
     //public double garnetStrandPrice;
     //public double garnetBeadPrice;
-    public string garnetBeadSize;
+    //public string garnetBeadSize;
+
+    public TMP_Text garnetNameText;
+    public TMP_Text garnetBeadTypeText;
 
     public TMP_Text garnetBeadSizeText;
 
@@ -24,45 +31,32 @@ public class GarnetBead : MonoBehaviour, IDataPersistence
     {
         CalculateBeadPrice();
     }
-
     private void CalculateBeadPrice()
     {
-        //beadName = garnetName;
-        //beadType = garnetBeadType;
         //numberOfBeadsOnStrand = garnetBeadsOnStrand;
         //numberOfBeadsOnHand = garnetBeadsOnHand;
-        garnetBeadSizeInputField.stringText = garnetBeadSizeText.text;
-        garnetBeadSize = garnetBeadSizeText.text;
+        //garnetBeadSizeInputField.stringText = garnetBeadSize;
+        //garnetBeadSize = garnetBeadSizeText.text;
         //priceOfBeadStrand = garnetStrandPrice;
         //pictureOfBeadSprite = garnetImage;
         //priceOfEachBead = garnetBeadPrice;
     }
-
-    public void LoadData(DataForBeads bead)
-    {
-        //this.garnetName = bead.garnetName;
-        //this.beadsOnHand.garnet4mmBeadsOnHand = bead.numberOfGarnetBeadsOnHand;
-        //this.beadsOnHand.garnet4mmBeadsOnStrand = bead.numberOfGarnetBeadsOnStrand;
-        //this.amountOfStrand.garnetStrandAmount = bead.priceOfGarnetBeadStrand;
-        //this.priceOfEachBead = bead.garnetBeadPrice;
-        this.garnetBeadSize = bead.garnetBeadSize;
-    }
-
     public void SaveData(ref DataForBeads bead)
     {
-        if (save)
-        {
-            //bead.garnetName = this.garnetName;
-            //bead.numberOfGarnetBeadsOnHand = this.
-            //bead.numberOfGarnetBeadsOnStrand = this.beadsOnHand.garnet4mmBeadsOnStrand;
-            //bead.priceOfGarnetBeadStrand = this.amountOfStrand.garnetStrandAmount;
-            //bead.garnetBeadPrice = this.priceOfEachBead;
-            bead.garnetBeadSize = this.garnetBeadSize;
-        }
+        bead.garnetName = garnetName = garnetNameInputField.stringText;
+        bead.garnetType = garnetBeadType = garnetBeadTypeInputField.stringText;
+        bead.numberOfGarnetBeadsOnStrand = numberOfGarnetBeadsOnStrand = numberOfGarnetBeadOnStrandInputField.floatText;
     }
+    public void LoadData(DataForBeads bead)
+    {
+        garnetName = garnetNameText.text = bead.garnetName;
+        garnetBeadType = garnetBeadTypeText.text = bead.garnetType;
+        numberOfGarnetBeadsOnStrand = bead.numberOfGarnetBeadsOnStrand;
+    }
+
 
     public void SaveBead()
     {
-        save = true;
+        DataPersistenceManager.instance.SaveButtonPress();
     }
 }

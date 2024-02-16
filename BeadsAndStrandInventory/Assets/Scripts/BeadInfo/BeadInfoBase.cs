@@ -6,22 +6,20 @@ using System;
 [System.Serializable]
 public class BeadInfoBase : MonoBehaviour
 {
-    //public bool save;
-    //[SerializeField]
-    //protected InputFieldTextHolder beadSizeInputField1;
-    protected InputFieldTextHolder beadSizeInputField2;
-    protected InputFieldTextHolder beadSizeInputField3;
-    protected InputFieldTextHolder beadSizeInputField4;
-    protected InputFieldTextHolder beadSizeInputField5;
-    protected InputFieldTextHolder beadSizeInputField6;
+    //////protected InputFieldTextHolder beadSizeInputField1;
+    //////protected InputFieldTextHolder beadSizeInputField2;
+    //////protected InputFieldTextHolder beadSizeInputField3;
+    //////protected InputFieldTextHolder beadSizeInputField4;
+    //////protected InputFieldTextHolder beadSizeInputField5;
+    //////protected InputFieldTextHolder beadSizeInputField6;
 
 
     //[Tooltip("This is the bead name")]
     //[SerializeField]
-    protected string beadName;
+    //////protected string beadName;
     //[Tooltip("This is the type of bead")]
     //[SerializeField]
-    protected string beadType;
+    //////protected string beadType;
     //[Tooltip("This is the the number of beads on hand")]
     //[SerializeField]
     protected float numberOfBeadsOnHand;
@@ -85,8 +83,8 @@ public class BeadInfoBase : MonoBehaviour
 
     protected virtual void CalculateBeadPrice()
     {
-        beadNameText.text = beadName;
-        typeOfBeadText.text = beadType;
+        //////beadNameText.text = beadName;
+        //////typeOfBeadText.text = beadType;
         numberOfBeadsOnHandText.text = numberOfBeadsOnHand.ToString();
         //beadSizeInputField.stringText = beadSizeText.text;
         //beadSizeText.text = beadSize;
